@@ -21,26 +21,33 @@
 
 
     <script>
+        // Soal No. 5 Welcome
+        function Welcome() {
+            return "Selamat datang di universitas teknokrat indonesia";
+        }
 
-        // Soal No. 5 Fungsi Welcome
-        /* 
-            Buatlah sebuah fungsi bernama Welcome(), yang mengembalikan nilai berupa "Selamat datang di universitas teknokrat indonesia", yang kemudian akan ditampilkan di 
-halaman html. Tampilkan di id jawaban5
-        */
+        document.getElementById("jawaban5").textContent = Welcome();
 
-        // tulis kode dibawah ini
 
-        
-       
-        // Soal No. 6 Fungsi Looping
-        /* 
-            Buatlah sebuah fungsi bernama lopping(), yang mengembalikan nilai hasil looping dari dua parameter yang dikirim.
-            contoh: looping(3, 7), maka akan tampil : 3,4,5,6,7
-        */
+        // Soal No. 6 Looping
+        function looping(start, end) {
+            let result = "";
+            for (let i = start; i <= end; i++) {
+                result += i;
+                if (i < end) {
+                    result += ",";
+                }
+            }
+            return result;
+        }
 
-        // tulis kode di sini 
-
+        document.getElementById("jawaban6").textContent = looping(3, 7);
     </script>
+
+
+
+
+
 </body>
 
 

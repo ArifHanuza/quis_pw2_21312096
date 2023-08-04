@@ -23,13 +23,18 @@
         echo "array numbers: ";
         print_r($numbers);
         // Lakukan Looping di sini
-
+                $rest = array();
+        foreach ($numbers as $number) {
+            $remainder = $number % 5;
+            $rest[] = $remainder;
+}
         // output nya nanti seperti ini --> [3, 0, 4, 1, 2, 4]
 
         echo "<br>";
         // tampilkan di sini
         echo "Array sisa baginya adalah:  "; 
         echo "<br>";
+        print_r($rest);
 
         echo "<h3> Soal No 3 Looping Asociative Array </h3>";
         /* 
@@ -55,6 +60,19 @@
         ];
         
         // Output: 
+        foreach ($items as $item) {
+            $itemData = array(
+                'id' => $item[0],
+                'name' => $item[1],
+                'price' => $item[2],
+                'description' => $item[3],
+                'source' => $item[4]
+            );
+        
+            // Tampilkan array asosiatif
+            print_r($itemData);
+            echo "<br>";
+        }
 
     ?>
 
